@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  redmon:
+    image: sqrt3/redmon
+    command: "-r redis://127.0.0.1:6379"
+    tty: true
+    stdin_open: true
+    ports:
+      - 4567:4567
